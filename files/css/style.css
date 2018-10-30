@@ -761,6 +761,27 @@ body {
 #authoring {
   padding-bottom: 30px;
 }
+.landscape-message {
+  height: 100vh;
+  width: 100vw;
+  display: none;
+  color: white;
+  background: #3b3b3b;
+  z-index: 20;
+  position: fixed;
+}
+.landscape-message h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center !important;
+}
 @media all and (max-width: 991px) {
   .shadow-container {
     margin: 35px;
@@ -876,11 +897,20 @@ body {
   .services li {
     width: 30%;
   }
+  .jarallax-img {
+    top: 90px !important;
+  }
 }
-@media (max-width: 767px) {
-  .bg_main {
-    /* background-image: url(../img/bg_main.jpg); */
-    height: 90vh;
+@media (max-width: 812px) 
+and (orientation : landscape){
+  .landscape-message {
+    display: block;
+  }
+  .shadow-container {
+    display: none;
+  }
+  .navbar-toggle {
+    display: none;
   }
 }
 @media all and (max-width: 479px) {
@@ -892,8 +922,10 @@ body {
     right: 3px;
   }
   .title-block-main .jarallax .title-main span {
-    font-size: 52px;
-    right: 10px;
+    font-size: 43px;
+    left: 5px;
+    right: 0;
+    padding: 0;
   }
   .title-block-main, .bg_main {
     height: 65vh;
@@ -903,8 +935,8 @@ body {
     margin-bottom: 20px;
   }
   .title-block-left .jarallax .title, .title-block-main .jarallax .title-main {
-    left: 30px;
-    right: 30px;
+    left: 10px;
+    right: 40px;
   }
   .article-snapshots {
     padding: 0;
@@ -979,7 +1011,7 @@ body {
     display: none;
   }
   .navbar-nav > li > a {
-    font-size: 14px;
+    font-size: 16px;
   }
   .navbar-nav > li {
     top: 10vh;
@@ -1006,5 +1038,27 @@ body {
   #location .text-block-info h2 { 
     margin-bottom: 30px;
   }
+  .navbar-toggle .icon-bar {
+    width: 33px;
+    height: 4px;
+  }
+  .article-snapshots .center {
+    padding-bottom: 15px;
+  }
+  .jarallax-img {
+    top: 40px !important;
+  }
+  .title-block-main {
+    top: -40px;
+  }
+  .fade-in.three {
+    margin-left: -90px;
+  } 
 } 
+
+@media all and (max-width: 320px) {
+  .fade-in.three {
+    margin-left: -90px;
+  } 
+}
 
