@@ -19,8 +19,8 @@
   transform: skewY(-3deg) translateZ(0);
   left: 0;
   z-index: 2;
-  top: 40px;
-  margin-bottom: 100px;
+  top: 80px;
+  margin-bottom: 120px;
 }
 .title-block-right {
   height: 55vh;
@@ -34,8 +34,8 @@
   transform: skewY(3deg) translateZ(0);
   left: 0;
   z-index: 2;
-  top: 40px;
-  margin-bottom: 80px;
+  top: 80px;
+  margin-bottom: 100px;
 }
 .title-block-main {
   height: 70vh;
@@ -833,7 +833,10 @@ body {
 
 @media all and (min-width: 2000px) {
   .bg_main #jarallax-container-0 .jarallax-img {
-    top: -85px !important;
+    top: -60px !important;
+  }
+  .title-block-main {
+    top: -70px;
   }
 }
 @media all and (max-width: 991px) {
