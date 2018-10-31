@@ -3,7 +3,7 @@
   -webkit-box-shadow: -1px 3px 35px 8px rgba(0,0,0,0.75);
   -moz-box-shadow: -1px 3px 35px 8px rgba(0,0,0,0.75);
   box-shadow: -1px 3px 35px 8px rgba(0,0,0,0.75);
-  margin: 80px;
+  margin: 60px;
   z-index: 10;
 }
 
@@ -19,8 +19,8 @@
   transform: skewY(-3deg) translateZ(0);
   left: 0;
   z-index: 2;
-  top: 80px;
-  margin-bottom: 140px;
+  top: 40px;
+  margin-bottom: 100px;
 }
 .title-block-right {
   height: 55vh;
@@ -34,8 +34,8 @@
   transform: skewY(3deg) translateZ(0);
   left: 0;
   z-index: 2;
-  top: 80px;
-  margin-bottom: 140px;
+  top: 40px;
+  margin-bottom: 80px;
 }
 .title-block-main {
   height: 70vh;
@@ -48,7 +48,7 @@
   -o-transform: skewY(-3deg) translateZ(0);
   transform: skewY(-3deg) translateZ(0);
   left: 0;
-  top: -80px;
+  top: -50px;
 }
 .title-block-left .jarallax .title,
 .title-block-main .jarallax  .title-main {
@@ -70,14 +70,18 @@ h1, h2 {
   font-family: 'Poppins', sans-serif;
 }
 
+h2 {
+  font-size: 25px;
+}
+
 .title-block-main .jarallax .title-main {
   background: white;
   top: -20%;
   -webkit-animation: slide 0.8s forwards;
   animation: slide 0.8s forwards;
-  -webkit-animation-delay: 0.1s;
-  -moz-animation-delay: 0.1s;
-  animation-delay: 0.1s;
+  -webkit-animation-delay: 0.9s;
+  -moz-animation-delay: 0.9s;
+  animation-delay: 0.9s;
 }
 .title-block-main .jarallax .title-main span {
   font-size: 70px;
@@ -87,21 +91,21 @@ h1, h2 {
 }
 
 .fade-in.one {
-  -webkit-animation-delay: 0.7s;
-  -moz-animation-delay: 0.7s;
-  animation-delay: 0.7s;
-}
-
-.fade-in.two {
-  -webkit-animation-delay: 1.2s;
-  -moz-animation-delay:1.2s;
-  animation-delay: 1.2s;
-}
-
-.fade-in.three {
   -webkit-animation-delay: 1.6s;
   -moz-animation-delay: 1.6s;
   animation-delay: 1.6s;
+}
+
+.fade-in.two {
+  -webkit-animation-delay: 2.1s;
+  -moz-animation-delay: 2.1s;
+  animation-delay: 2.1s;
+}
+
+.fade-in.three {
+  -webkit-animation-delay: 2.6s;
+  -moz-animation-delay: 2.6s;
+  animation-delay: 2.6s;
 }
 
 /*------ANIMATIONS-------*/
@@ -224,6 +228,44 @@ h1, h2 {
   -moz-box-shadow: -1px -1px 25px 2px rgba(150,150,150,1);
   box-shadow: -1px -1px 25px 2px rgba(150,150,150,1);*/
 }
+.contact-link-holder {
+  width: 330px;
+  padding: 10px 0 40px 0;
+  margin: 0 auto;
+  display: block;
+}
+.contact-icon-holder {
+  border-radius: 100%;
+  font-size: 4rem;
+  border: 1px solid orange;
+  width: 5rem;
+  border-radius: 500px;
+  height: 5rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-right: 2rem;
+}
+.contact-icons {
+  padding: 10px;
+  width: 50px;
+}
+.contact-link {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding: 1rem 0;
+}
+
+.contact-link p {
+  margin-top: 10px;
+}
 
 .footer {
   background: transparent;
@@ -256,7 +298,7 @@ h1, h2 {
     overflow: hidden;
 }
 .center {
-    text-align: center;
+    text-align: center !important;
 }
 
 .text-block, .text-block-info {
@@ -276,6 +318,9 @@ h1, h2 {
 .text-block-info {
   margin-top: 10px;
 }
+.info-list {
+  padding-inline-start: 18px !important;
+}
 .info-list li {
   font-family: 'Hind', sans-serif; 
   color: #3b3b3b;
@@ -284,7 +329,7 @@ h1, h2 {
 }
 .services {
   margin-top: 30px;
-  padding-inline-start: 0px;
+  padding-inline-start: 0px !important;
 }
 .services li {
   width: 28%;
@@ -330,7 +375,7 @@ h1, h2 {
 }
 
 .article-snapshots {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   max-width: 1080px;
   display: block;
   margin: 0 auto;
@@ -343,10 +388,6 @@ h1, h2 {
   font-size: 18px;
 }
 
-.add-top-padding {
-  padding-top: 50px;
-  padding-bottom: 0px;
-}
 .add-margin-bottom {
   margin-bottom: 200px !important;
 }
@@ -617,8 +658,8 @@ body {
   border: none;
   background: transparent !important;
   position: fixed;
-  top: 78px;
-  right: 72px;
+  top: 55px;
+  right: 50px;
   z-index: 20;
 }
 .navbar-toggle:hover {
@@ -628,7 +669,7 @@ body {
   width: 35px;
   height: 5px;
   border-radius: 0px;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #a4a4a4;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   background-color: white !important;
@@ -711,7 +752,7 @@ body {
   background: rgba(3, 6, 12, 0.99);
 }
 .navbar-nav > li {
-  top: 23vh;
+  top: 19vh;
   float: none;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -719,15 +760,18 @@ body {
 .navbar-nav > li > a {
   color: white !important;
   padding-top: 15px;
-  padding-bottom: 8px;
+  padding-bottom: 7px;
   text-align: right;
-  right: 84px;
+  right: 66px;
   font-family: 'Raleway', sans-serif;
   font-weight: 100;
-  font-size: 20px;
-  -webkit-transition: all 0.1s ease;
-  -o-transition: all 0.1s ease;
-  transition: all 0.1s ease;
+  font-size: 23px;
+  -webkit-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+.navbar-nav li a:hover {
+  color: #69d1f4 !important;
 }
 .navbar-collapse.collapse.in {
   display: block !important;
@@ -739,17 +783,20 @@ body {
   position: relative;
   left: 48.75%;
   margin-top: 20px;
-  width: 32px;
+  padding-top: 12px;
+  width: 38px;
   margin-bottom: 30px;
   background: #fff;
-  height: 30px;
+  height: 38px;
+  border-radius: 500px;
   border: 1px solid #3b3b3b;
   z-index: 1;
 }
 .up-arrow {
-  width: 21px;
+  width: 20px;
   height: 10px;
-  margin-left: 4px;
+  display: block;
+  margin: 0 auto;
 }
 .go-up a {
   text-decoration: none;
@@ -757,6 +804,7 @@ body {
 }
 .link-no-decoration {
   text-decoration: none;
+  color: #3b3b3b;
 }
 #authoring {
   padding-bottom: 30px;
@@ -781,6 +829,12 @@ body {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center !important;
+}
+
+@media all and (min-width: 2000px) {
+  .bg_main #jarallax-container-0 .jarallax-img {
+    top: -85px !important;
+  }
 }
 @media all and (max-width: 991px) {
   .shadow-container {
@@ -835,21 +889,23 @@ body {
     /*top: 30%;*/
     /*left: 10px;*/
     top: 40%;
-    left: 70%;
-    transform: skewY(-3deg) translateZ(0) translate(-50%, -50%);
+    left: 30%;
   }
   .title-block-left .jarallax .title {
     /*left: 28px;*/
+    position: absolute;
     /*top: 30%;*/
     width: 100%;
-    position: absolute;
-    top: 56%;
-    left: 70%;
-    transform: skewY(3deg) translateZ(0) translate(-50%, -50%);
+    top: 40%;
+    right: 100%;
   }
   .title-block-left h1, .title-block-right h1 {
     font-size: 28px;
-    width: 61%;
+    width: fit-content;
+  }
+  #contact .title-block-right .jarallax .title {
+    top: 35%;
+    left: 75%;
   }
   .info-list li {
     font-size: 14px;
@@ -878,7 +934,7 @@ body {
     display: none;
   }
   .navbar-nav > li > a {
-    font-size: 14px;
+    font-size: 21+px;
   }
   .navbar-nav > li {
     top: 25vh;
@@ -899,6 +955,12 @@ body {
   }
   .jarallax-img {
     top: 90px !important;
+  }
+  .bg_main #jarallax-container-0 .jarallax-img {
+    top: 0px !important;
+  }
+  .services li:nth-child(1), .services li:nth-child(2) {
+    margin-right: 3.5%;
   }
 }
 @media (max-width: 812px) 
@@ -1014,7 +1076,7 @@ and (orientation : landscape){
     font-size: 16px;
   }
   .navbar-nav > li {
-    top: 10vh;
+    top: 23vh;
   }
   .go-up {
     left: 46.5%;
@@ -1039,8 +1101,8 @@ and (orientation : landscape){
     margin-bottom: 30px;
   }
   .navbar-toggle .icon-bar {
-    width: 33px;
-    height: 4px;
+    width: 35px;
+    height: 5px;
   }
   .article-snapshots .center {
     padding-bottom: 15px;
@@ -1054,11 +1116,25 @@ and (orientation : landscape){
   .fade-in.three {
     margin-left: -90px;
   } 
+  #contact .title-block-right .jarallax .title {
+    top: 35%;
+    left: 75%;
+  }
+  #contact .title-block-right .jarallax .title h1 {
+    top: 45%;
+    left: 104%;
+  }
+  #location .text-block-info .center {
+    margin-top: 10px;
+  }
 } 
 
 @media all and (max-width: 320px) {
   .fade-in.three {
-    margin-left: -90px;
+    margin-left: 0px;
   } 
+  .navbar-nav > li {
+    top: 12vh;
+  }
 }
 

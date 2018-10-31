@@ -19,6 +19,7 @@ $( document ).ready(function() {
       $('.jarallax').jarallax({
           speed: 0.3
       });
+      $('.jarallax-img').css('z-index', '-1');
     }
     else {
       $('.jarallax-img').css('z-index', '-1');
@@ -33,7 +34,10 @@ $( document ).ready(function() {
 $('.navbar-nav > li > a').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });
-
+$('[data-toggle="slide-collapse"]').on('click', function() {
+    $navMenuCont = $($(this).data('target'));
+    $navMenuCont.animate({'width':'toggle'}, 350);
+});
 $(document).ready(function () {
     // bind click event to all internal page anchors
     $('a[href*="#"]').on('click', function (e) {
