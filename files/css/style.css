@@ -850,6 +850,7 @@ body {
   .title-block-main .jarallax .title-main span {
     font-size: 52px;
     right: 10px;
+    font-weight: 700;
   }
   .title-block-main, .bg_main {
     height: 65vh;
@@ -964,6 +965,12 @@ body {
   }
   .services li:nth-child(1), .services li:nth-child(2) {
     margin-right: 3.5%;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 21px;
   }
 }
 @media (max-width: 812px) 
@@ -1120,12 +1127,11 @@ and (orientation : landscape){
     margin-left: -90px;
   } 
   #contact .title-block-right .jarallax .title {
-    top: 35%;
-    left: 75%;
+    top: 43%;
+    left: 102%;
   }
-  #contact .title-block-right .jarallax .title h1 {
-    top: 45%;
-    left: 104%;
+  #contact .title-block-right .jarallax .title  h1 {
+    width: 38%;
   }
   #location .text-block-info .center {
     margin-top: 10px;
