@@ -191,8 +191,12 @@ h2 {
     z-index: unset;
     overflow: hidden;
 }
-.jarallax:nth-child(2) {
-  transform: scale(1.15,1.15);
+#jarallax-container-1, #jarallax-container-2,
+#jarallax-container-3, #jarallax-container-4, 
+#jarallax-container-5, #jarallax-container-6,
+#jarallax-container-7, #jarallax-container-8,
+#jarallax-container-9 {
+  transform: scale(1.15,1.15) !important;
 }
 
 .jarallax-img {
