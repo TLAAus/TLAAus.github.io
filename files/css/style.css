@@ -141,7 +141,7 @@
 
 h1, h2 {
   text-align: left !important;
-  font-weight: bold;
+  font-weight: 700;
   font-family: 'Poppins', sans-serif;
 }
 h1{
@@ -1217,6 +1217,12 @@ and (orientation : landscape){
   }
   .navbar-nav li a {
     padding-top: 10px;
+  }
+  h1 {
+    font-size: 23px;
+  }
+  .services li:nth-child(1), .services li:nth-child(2) {
+     margin-right: 0%; 
   }
 } 
 
