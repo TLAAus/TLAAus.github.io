@@ -26,6 +26,7 @@ $( document ).ready(function() {
     }
     if(is_edge_or_ie){
       $('.jarallax-img').css('position', 'relative');
+      $('.services').css('margin-left', '-38px');
     }
 });
 
