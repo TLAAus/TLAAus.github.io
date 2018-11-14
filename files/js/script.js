@@ -24,6 +24,9 @@ $( document ).ready(function() {
     else {
       $('.jarallax-img').css('z-index', '-1');
     }
+    if(is_edge_or_ie){
+      $('.jarallax-img').css('position', 'relative');
+    }
 });
 
 $( document ).ready(function() {
