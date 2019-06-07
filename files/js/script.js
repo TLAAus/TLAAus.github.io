@@ -28,8 +28,12 @@ $( document ).ready(function() {
       $('.jarallax-img').css('position', 'relative');
       $('.services').css('margin-left', '-38px');
     }
+    var theDate = new Date(); 
+    $(".year").text(theDate.getFullYear());
 });
-
+Pace.on("done", function(){
+    $('.preloader-wrap').fadeOut(200);
+});
 $( document ).ready(function() {
   $('.jarallax').css('z-index', 'unset');
 });

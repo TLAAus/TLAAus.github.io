@@ -22,11 +22,14 @@
 	<!-- Remove the ?v1.1 or add it to the end of app.css href depending on which is current to force user browser cache refresh -->
 	<!-- <link href="./files/css/app.css?v=1.1" rel="stylesheet"> -->
 	<link href="./files/css/style.css?v=2.7" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./files/css/pace.simple.css"/>
 </head>
 <body>
+	<div class="preloader-wrap">
+	</div>
 	<div class="landscape-message">
 		<h1>Please rotate your device.</h1>
-	</div>
+	</div>	
 	<nav class="navbar navbar-default">
 	    <div class="container-nav">
 			<div class="navbar-header">
@@ -446,7 +449,7 @@
     <div class="body-container footer no-margin-top">
         <div class="text-block-info">
             <p>
-                Copyright &copy; 2018 The Logistics Alliance. 
+                Copyright &copy; <span class="year"></span> The Logistics Alliance. 
             </p>
             <p>
                 ABN: 619 334 548
@@ -470,6 +473,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.1/velocity.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="
 sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
 <script type="text/javascript" src="./files/js/script.js"></script>
 </body>
 </html>	
