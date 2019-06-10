@@ -32,7 +32,8 @@ $( document ).ready(function() {
     $(".year").text(theDate.getFullYear());
 });
 Pace.on("done", function(){
-    $('.preloader-wrap').fadeOut(200);
+    $('.preloader-wrap').fadeOut("slow");
+    $('.title-main').css('display', 'block');
 });
 $( document ).ready(function() {
   $('.jarallax').css('z-index', 'unset');

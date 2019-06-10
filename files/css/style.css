@@ -187,37 +187,38 @@ h2 {
 
 .title-block-main .jarallax .title-main {
   background: white;
-  top: -20%;
+  top: -30%;
+  display: none;
   -webkit-animation: slide 0.8s forwards;
   animation: slide 0.8s forwards;
-  -webkit-animation-delay: 0.9s;
-  -moz-animation-delay: 0.9s;
-  animation-delay: 0.9s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
 }
 .title-block-main .jarallax .title-main span {
   font-size: 70px;
   padding: 8px; 
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  /*letter-spacing: 3px;*/
+  letter-spacing: -3px;
 }
 
 .fade-in.one {
-  -webkit-animation-delay: 1.6s;
-  -moz-animation-delay: 1.6s;
-  animation-delay: 1.6s;
+  -webkit-animation-delay: 1.7s;
+  -moz-animation-delay: 1.7s;
+  animation-delay: 1.7s;
 }
 
 .fade-in.two {
-  -webkit-animation-delay: 2.1s;
-  -moz-animation-delay: 2.1s;
-  animation-delay: 2.1s;
+  -webkit-animation-delay: 2.2s;
+  -moz-animation-delay: 2.2s;
+  animation-delay: 2.2s;
 }
 
 .fade-in.three {
-  -webkit-animation-delay: 2.6s;
-  -moz-animation-delay: 2.6s;
-  animation-delay: 2.6s;
+  -webkit-animation-delay: 2.7s;
+  -moz-animation-delay: 2.7s;
+  animation-delay: 2.7s;
 }
 
 /*------ANIMATIONS-------*/
@@ -238,6 +239,7 @@ h2 {
       top: 46%;
     }
 }
+
 .fade-in {
   opacity:0;  /* make things invisible upon start */
   -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
@@ -975,6 +977,8 @@ body {
   }
   .title-block-left .jarallax .title, .title-block-main .jarallax .title-main {
     left: 30px;
+    right: 150px;
+    text-align: left;
   }
   .article-snapshots {
     padding: 0;
@@ -1108,11 +1112,13 @@ and (orientation : landscape){
     right: 3px;
   }
   .title-block-main .jarallax .title-main span {
-    font-size: 43px;
-    left: 5px;
+    font-size: 49px;
     right: 0;
     padding: 0;
   }
+/*  .title-block-main .jarallax .title-main span:nth-child(2) {
+    margin-left: 10px;
+  }*/
   .title-block-main, .bg_main {
     height: 65vh;
   }
@@ -1121,8 +1127,9 @@ and (orientation : landscape){
     margin-bottom: 20px;
   }
   .title-block-left .jarallax .title, .title-block-main .jarallax .title-main {
-    left: 10px;
-    right: 40px;
+    left: 14px;
+    right: 14px;
+    padding-left: 10px;
   }
   .article-snapshots {
     padding: 0;
@@ -1237,9 +1244,6 @@ and (orientation : landscape){
   .title-block-main {
     top: -40px;
   }
-  .fade-in.three {
-    margin-left: -90px;
-  } 
   #contact .title-block-right .jarallax .title {
     top: 43%;
     left: 102%;
